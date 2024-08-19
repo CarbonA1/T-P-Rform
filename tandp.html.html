@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training & Placement Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png" id="logo-img"></a>
+
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission_page.html">Admission</a></li>
+                    <li><a href="#course_call">Course</a></li>
+                    <li><a href="tandp.html.html">T&P registration form</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div> 
+            
+        </nav>
+    <form id="registrationForm">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName">
+            <div id="fullNameError" class="error-message"></div>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" class="error-message">
+        </div>
+        
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <div id="phoneError" class="error-message"></div>
+        </div>
+        
+        <div>
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course">
+            <div id="courseError" class="error-message"></div>
+        </div>
+        
+        <div>
+            <label for="year">Year of Study:</label>
+            <input type="text" id="year" name="year">
+            <div id="yearError" class="error-message"></div>
+        </div>
+        
+        <div>
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume">
+            <div id="resumeError" class="error-message"></div>
+        </div>
+        
+        <button type="submit">Register</button>
+        <div id="formMessage"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
